@@ -78,6 +78,7 @@ class Hangman:
             for index, letter in enumerate(self.word):
                 if letter == guess:
                     self.word_guessed[index] = guess
+                    print (f"{self.word_guessed}")
             self.num_letters -=1         
         else:
             self.num_lives -=1
@@ -128,7 +129,7 @@ def play_game(word_list):
             print (f"You lost! The word was {game.word}")
             break
         elif game.num_letters == 0:
-            print ("You won!")
+            print ("Congratulations! You won!")
             break
         else:
             game.ask_letter()
