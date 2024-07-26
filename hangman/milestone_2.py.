@@ -1,0 +1,3 @@
+word_list = ['banana', 'apple', 'strawberry', 'blueberry', 'cherry']
+
+print (word_list)
